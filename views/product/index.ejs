@@ -1,0 +1,100 @@
+
+<%- include("../partials/head.ejs") %>
+
+
+    <h1> PRODUCTS </strong>MANAGEMENT </strong> </h1>
+    <div class="outputs">
+        <div class="searchBlock">
+            <input type="text" id="search" placeholder="Search">
+            <div class="btnSearch">
+                <button id="searchTitle"> Search by title </button>
+                <button id="searchTCategory">Search By category</button>
+            </div>
+        </div>
+        </div>
+    
+        <a href= "/product/new"><button id="btn1" > create a product</button></a>
+        <% products.forEach((product, index) => { %>
+            
+        <a href="/product/<%= product._id %>"><h2><%= product.title%></h2></a>
+        <% }) %>
+
+        <table>
+            <tr>
+               <th>id:       </th>
+
+               <th>title:       </th>
+
+               <th>PRICE:      </th>
+        
+               <th>taxes:      </th>
+        
+               <th>ads:      </th>
+        
+               <th>discount:  </th>
+
+               <th>total: </th>
+        
+               <th>count:    </th> 
+        
+               <th>category:  </th>
+        
+                
+            </tr>
+        <tbody>
+            <tr>
+                <th>1</th>
+
+                <th>Samsung </th>
+ 
+                <th>2000 </th>
+         
+                <th>100</th>
+         
+                <th>100</th>
+         
+                <th>100</th>
+
+                <th>100</th>
+         
+                <th>2010 </th> 
+         
+                <th>phone</th>
+         
+                
+            </tr>
+            <tr>
+                <th>1</th>
+
+                <th>Samsung </th>
+ 
+                <th>2000 </th>
+         
+                <th>100</th>
+         
+                <th>100</th>
+         
+                <th>100</th>
+
+                <th>100</th>
+         
+                <th>2010 </th> 
+         
+                <th>phone</th>
+         
+                
+            </tr>
+        </tbody>
+    </table>
+
+
+    
+        
+<!-- <a href= "/product/new"><button id="btn1" > create a product</button></a>
+<% products.forEach((product, index) => { %>
+    
+<a href="/product/<%= product._id %>"><h2><%= product.title%></h2></a>
+<% }) %> -->
+
+
+

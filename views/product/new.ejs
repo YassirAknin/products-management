@@ -1,0 +1,17 @@
+
+<%- include("../partials/head.ejs") %>
+
+<h1> create a new product</h1>
+
+<form action="/product" method="post">
+    <input type="text" id="title" name="title"placeholder="title">
+    <input type="number" id="price" name="price"placeholder="price">
+    <input type="number" id="taxes" name="taxes" placeholder="taxes">
+    <input type="number" id="ads"  name="ads"placeholder="ads">
+    <input type="number" id="discount" name="discount" placeholder="discount">
+    <small id="total">32132</small>
+    <input type="number" id="count" name="count" placeholder="count">
+    <input type="text" id="category" name="category" placeholder="category">
+    <button type="submit" id="submit"> create a new product</button>
+</form>
+

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #222;
+    color: bisque;
+    font-family: system-ui,
+}
+.index{
+    width: 80%;
+    margin:outo;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+} 
+input:focus{
+    background: #000;
+    transform: scale(1.05);
+}  
+#total{
+    width: 20%;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgb(158, 15, 15);
+    padding: 8px 4px;
+    border-radius: 4px;
+}
+
+#total::before{
+    content: 'total: ';
+}
+
+button{
+    width: 20%;
+    height: 30px;
+    border: none;
+    text-align: center; 
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgb(0,172,238);
+    padding: 8px 1px;
+    border-radius: 20px;
+    transition : 0.5s;
+} 
+button:hover{
+    background: rgb(161, 58, 58);
+    letter-spacing: 2px;
+}
+   
+
+
+.btnSearch{
+    display: flex;
+    justify-content: space-between; 
+}
+/* search button{
+    width:45%
+} */
+/* #searchTitle{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative; left:300px; top:-230px
+} */
+/* .show{
+    display: flex;
+    justify-content: space-between;
+    
+} */
+ #delete{
+    width: 60px;
+  height: 25px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center; 
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background: rgb(0,172,238);
+  border: none;
+}  
+
+#update{
+    width: 60px;
+    height: 25px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    text-align: center; 
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background: rgb(0,172,238);
+    border: none;
+}
+table{
+    width: 10%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+   text-transform: uppercase ; 
+}
+th,td{
+    padding: 5px;
+}

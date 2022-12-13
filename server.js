@@ -3,6 +3,7 @@ require("dotenv").config()
 const express = require("express")
 const morgan = require("morgan")
 const methodOverride = require("method-override")
+const ProductRouter = require("./controllers/product")
 
 
 // application Object
@@ -21,6 +22,12 @@ app.use("/static", express.static("public"))
 app.get("/", (req, res)=> {
     res.send("server is working")
 })
+
+app.use("/product", ProductRouter)
+
+
+
+
 
 // server listener
 const PORT = process.env.PORT || 3002

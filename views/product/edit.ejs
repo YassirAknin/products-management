@@ -1,0 +1,19 @@
+
+<%- include("../partials/head.ejs") %>
+
+<h1> Update <%= product.title%> </h1>
+
+<form action="/product/<%= product._id%>?_method=PUT" method="post">
+    <input type="text" id="text" name="name"placeholder="title" value="<%= product.title %>">
+    <input type="number" id="price" name="price"placeholder="price" value="<%= product.price %>">
+    <input type="number" id="taxes" name="taxes" placeholder="taxes" value="<%= product.taxes %>">
+    <input type="number" id="ads"  name="ads"placeholder="ads" value="<%= product.ads %>">
+    <input type="number" id="discount" name="discount" placeholder="discount" value="<%= product.discount %>">
+    <input type="number" id="count" name="count" placeholder="count" value="<%= product.discount %>">
+    <input type="text" id="category" name="category" placeholder="category"value="<%= product.discount %>">
+    <input type="submit" value="Update <%= product.title %>">
+</form>
+
+
+
+

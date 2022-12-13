@@ -5,10 +5,12 @@ const mongoose = require("./connection")
 
 const productSchema = new mongoose.Schema({
     title: {type: String, require: true},
-    price: Number,
-    taxes: Number,
-    ads: Number,
-    discount: Number,
+    price: {type: Number, require: true},
+    taxes: {type: Number, require: true},
+    ads: {type: Number, require: true},
+    discount: {type: Number, require: true},
+    count: {type: Number, require: true},
+    category: {type: String, require: true},
 }, {timestamps: true})
 
 // Product Model interface with the database for products
